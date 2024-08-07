@@ -4,27 +4,29 @@
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Handling</title>
+    <title>Login</title>
 </head>
 <body>
-    <div class="login">
-    <h2>Login</h2>
-    <form action="" method="GET">
-        <div class="email">
-            <p>Email Address</p>
-                <input type="text" placeholder="Email" name="first name" value="" required="">
+        <div>
+            <img class="logo" src="assets/LOGO-FULL.png" alt="Avocado Hive">
+                <div class="wrapper">
+                    <div class="content">
+                        <h2>Login</h2>
+                        <div class="inputbox">
+                            <input type="text" placeholder="Username" required>
+                        </div>
+                        <div class="inputbox">
+                            <input type="password" placeholder="Password" required>
+                        </div>
+                        <button type="submit" class="button">Login</button>
+                    </div>
+                </div>
         </div>
-        <div class="password">
-            <p>Password</p>
-                <p><input type="text" placeholder="Password" name="Last name" value="" required=""></p>
-            <input type="Submit" name="Submit" value="Submit">
-        </div>
-    </form>
-    </div>
+    
 </body>
 </html>
-<div class="phpform">
+<!-- <div class="phpform">
     <?php   
         print_r($_GET);
     ?>
-</div>
+</div> -->
