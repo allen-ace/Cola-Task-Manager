@@ -1,8 +1,7 @@
 <?php
-// Start the session
 session_start();
 
-// Check if the user is logged in, if not redirect to the login page
+// Check if logged in, if not send back
 if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     header("Location: index.php");
     exit;

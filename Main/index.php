@@ -36,10 +36,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
     <div> 
+        <!-- Logo picture -->
         <img class="logo" src="assets/LOGO-FULL.png" alt="Avocado Hive">
         <div class="wrapper">
             <div class="content">
-                
+                <!-- Login form -->
                 <form action="" method="POST">
                     <h2>Login</h2>
                     <div class="inputbox">
@@ -50,7 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </div>
                     <button type="submit" class="button">Login</button>
 
-                    <!-- Display error message if set -->
+                    <!-- Display error message if wrong password/username -->
                 <?php if (!empty($error_message)): ?>
                     <p style="color:red;"><?php echo $error_message; ?></p>
                 <?php endif; ?>
